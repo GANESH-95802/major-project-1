@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URL, {})
-    .then(() => console.log('MongoDB Connected to ShopSphere Database'))
+    .then(() => console.log('MongoDB Connected to ShopSphere'))
     .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
